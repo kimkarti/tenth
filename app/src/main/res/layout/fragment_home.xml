@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="Clients.Fragment.HomeFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_circular_home"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="400dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/custom_progress_dialog"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/category_recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/strip_ad"
+                android:elevation="3dp"
+                android:layout_below="@+id/category_recyclerview"
+                android:visibility="gone">
+                <include layout="@layout/strip_ad_layout"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontal_product_popular"
+                android:elevation="3dp"
+                android:background="#FFFF99"
+                android:layout_below="@+id/strip_ad"
+                android:visibility="gone">
+                <include layout="@layout/horizontal_product_layout"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horizontal_product_popular"
+                android:layout_marginTop="6dp"
+                android:id="@+id/slider_layout"
+                android:visibility="gone">
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:elevation="5dp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:id="@+id/banner_slider_view_pager"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/grid_trending_product_layout"
+                android:layout_marginTop="4dp"
+                android:elevation="3dp"
+                android:background="#B0DFE5"
+                android:layout_below="@+id/slider_layout"
+                android:visibility="gone">
+                <include layout="@layout/grid_product_layout"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_last_item_ordered_home_view"
+                android:elevation="3dp"
+                android:layout_marginTop="6dp"
+                android:background="#FEC5E5"
+                android:layout_below="@+id/grid_trending_product_layout"
+                android:visibility="gone">
+                <include layout="@layout/recent_order"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/grid_advertise_layout"
+                android:elevation="3dp"
+                android:layout_below="@+id/my_last_item_ordered_home_view"
+                android:visibility="gone">
+            <include layout="@layout/grid_advertise_layout"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="2dp"
+
+    android:elevation="8dp"
+    android:background="@drawable/product_card_view">
+
+
+
+        <TextView
+            android:id="@+id/custom_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentStart="true"
+            android:text="Display Name"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="normal"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/custom_profile_uid"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:text="Display UID"
+            android:layout_below="@+id/custom_profile_name"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+</RelativeLayout>

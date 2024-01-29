@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:title="Approve Supplies"
+        android:id="@+id/appr"
+        android:icon="@drawable/ic_search"
+        />
+    <item
+        android:title="@string/sign_out"
+        android:id="@+id/logou"
+        />
+</menu>

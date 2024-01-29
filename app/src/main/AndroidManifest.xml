@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" package="com.example.tenthskate">
+    <uses-permission android:name="android.permision.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.Manifest.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.Manifest.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/tenth"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/girlskate"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+        <activity
+            android:name="com.example.tenthskate.Clients.Feedback.feedback"
+            android:exported="true" />
+        <activity
+            android:name="com.example.tenthskate.stockinventor.Activity.requestd"
+            android:exported="true" />
+        <activity
+            android:name="com.example.tenthskate.stockinventor.Activity.manageRequest1"
+            android:exported="true" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.CustomerCare"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.tenthskate.Supplier.Activity.manageRequest"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Reg" -->
+        <!-- android:exported="false" /> -->
+        <activity android:name="com.example.tenthskate.Faq.MainActivity" />
+        <activity android:name="com.example.tenthskate.Receipt.RDetails" />
+        <activity android:name="com.example.tenthskate.Shippment.Activity.CheckOrderDetails" />
+        <activity android:name="com.example.tenthskate.Shippment.Activity.MainActivity" />
+        <activity android:name="com.example.tenthskate.Finance.Activity.CheckOrderDetails" />
+        <activity android:name="com.example.tenthskate.SupplyAuto.Activity.MainActivity" />
+        <activity android:name="com.example.tenthskate.SupplyAuto.Activity.delDetails" />
+        <activity android:name="com.example.tenthskate.Supplier.Activity.MainActivity" />
+        <activity android:name="com.example.tenthskate.Supplier.Activity.CheckOrderDetails" />
+        <activity android:name="com.example.tenthskate.stockinventor.Activity.MessageActivity" />
+        <activity android:name="com.example.tenthskate.stockinventor.Activity.CheckOrderDetails" />
+        <activity android:name="com.example.tenthskate.Finance.Activity.MainActivity" />
+        <activity android:name="com.example.tenthskate.Driver.Activity.CheckOrderDetails" />
+        <activity android:name="com.example.tenthskate.Driver.Activity.MainActivity" />
+        <activity android:name="com.example.tenthskate.driverspecs.Activity.delDetails" />
+        <activity android:name="com.example.tenthskate.driverspecs.Activity.MainActivity" />
+        <activity
+            android:name="com.example.tenthskate.stockinventor.Activity.ManageProductActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.example.tenthskate.stockinventor.Activity.AddProductActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.example.tenthskate.stockinventor.Activity.MainActivity" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.ChatActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.PolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.PlaceOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.AddAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.ViewProductDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.tenthskate.Clients.Activities.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

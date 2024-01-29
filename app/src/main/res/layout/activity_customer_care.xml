@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/kk"
+    tools:context=".Clients.Activities.CustomerCare">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/main_page_toolbar"
+            layout="@layout/stock_app_bar_layout">
+        </include>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="see feedback"-->
+<!--        android:id="@+id/feeed"-->
+<!--        android:background="@drawable/product_card_view"-->
+<!--        android:fontFamily="@font/maiandra"-->
+<!--        android:textSize="30dp"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chats_recycler_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_marginTop="80dp"
+        android:background="#998d70"
+        />
+</RelativeLayout>

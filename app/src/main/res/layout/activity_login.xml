@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tenth"
+        android:scaleType="centerCrop" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/coordinatorLayout"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="139dp"
+                android:layout_gravity="center_horizontal"
+
+                app:cardCornerRadius="80dp">
+
+                <!---  <ImageView
+                      android:id="@+id/splash_image"
+                      android:layout_width="179dp"
+
+                      android:layout_height="match_parent"
+                      android:layout_centerInParent="true"
+                      android:contentDescription="@string/todo"
+                      android:src="@drawable/quadskate" /> -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:gravity="center"
+                 android:text="SIGN IN"
+
+                 android:textColor="@color/colorPrimary"
+                 android:textSize="40sp"
+                 android:textStyle="bold" />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/ref"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#e0f2f1"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter email"
+                app:hintTextColor="@color/black"
+                android:textColorHint="@color/productCuttedPriceRed">
+
+
+                <EditText
+
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="28sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/product_card_view"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#ffff"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:hint="Password"
+
+
+                android:textColorHint="#84ffff"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+
+
+                android:layout_height="wrap_content">
+
+                <EditText
+
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="26sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/product_card_view"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/productCuttedPriceRed"
+                    android:textColor="#ffff"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Select User"
+                    android:textSize="16sp"
+                    android:background="@drawable/product_card_view"
+                    android:textStyle="italic"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <Spinner
+
+                    android:id="@+id/choiceOf"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/product_card_view"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#ffeb3b"
+                    android:textSize="26sp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep Me Logged In"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/checkbox"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@color/black"
+                android:layout_centerVertical="true"
+                >
+                <Button
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:padding="6dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Login"
+                    android:background="@drawable/product_card_view"
+                    android:textColor="#84ffff"
+                    android:textAllCaps="false"
+                    android:id="@+id/login1"
+                    />
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:text="Register"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#f9ac67"
+                    android:textAllCaps="false"
+                    android:id="@+id/register"
+                    android:background="@drawable/product_card_view"/>
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:padding="6dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Reset"
+                    android:textColor="#009"
+                    android:textAllCaps="false"
+                    android:id="@+id/reset"
+                    android:background="@drawable/product_card_view"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

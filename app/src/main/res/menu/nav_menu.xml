@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/nav_main_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home_main"
+            android:title="@string/home"
+            android:checked="true"/>
+    </group>
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/packedkit"
+            android:icon="@drawable/skatepacked"
+            android:title="@string/packed"/>
+        <item
+            android:id="@+id/elbowkit"
+            android:icon="@drawable/elbowpad"
+            android:title="@string/elbow_pad"/>
+        <item
+            android:id="@+id/helmetkit"
+            android:icon="@drawable/helmet"
+            android:title="@string/helmet"/>
+        <item
+            android:id="@+id/rollerkit"
+            android:icon="@drawable/rollerskates"
+            android:title="@string/roller_skates"/>
+        <item
+            android:id="@+id/kneekit"
+            android:icon="@drawable/kneepad"
+            android:title="@string/knees_pad"/>
+        <item
+            android:id="@+id/wristkit"
+            android:icon="@drawable/wristpad"
+            android:title="@string/wrist_guard"/>
+        <item
+            android:id="@+id/nav_other_needs_category"
+            android:icon="@drawable/skateboard"
+            android:title="@string/other_needs"/>
+    </group>
+
+    <group
+        android:id="@+id/nav_user_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_orders"
+            android:icon="@drawable/nav_orders"
+            android:title="@string/my_orders"/>
+        <item
+            android:id="@+id/nav_my_cart"
+            android:icon="@drawable/nav_cart"
+            android:title="@string/my_cart"/>
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/nav_men"
+            android:title="@string/my_account"/>
+        <item
+            android:id="@+id/nav_my_notifications"
+            android:icon="@drawable/nav_offer"
+            android:title="@string/offer_zone"/>
+        <item
+            android:id="@+id/nav_ask"
+            android:icon="@drawable/nav_message"
+            android:title="@string/message_to_us"/>
+        <item
+            android:id="@+id/feed"
+            android:icon="@drawable/ic_star"
+            android:title="Rate Us" />
+    </group>
+
+</menu>

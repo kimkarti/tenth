@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "204516900916",
+    "firebase_url": "https://ecomm-8e70f-default-rtdb.firebaseio.com",
+    "project_id": "ecomm-8e70f",
+    "storage_bucket": "ecomm-8e70f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204516900916:android:81dc980533b587bc740a61",
+        "android_client_info": {
+          "package_name": "com.example.tenthskate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204516900916-trh7gsb6l7q86blaomsc4vqdib7o9va4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC1rlIIVcfLc4lt_AD48zvWgF-bWTALgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204516900916-trh7gsb6l7q86blaomsc4vqdib7o9va4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

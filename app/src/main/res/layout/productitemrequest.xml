@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/product_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/product_card_view"
+            android:padding="5dp"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/product_card_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/image_preview"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/product_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:textStyle="bold"
+                android:background="@drawable/card_input_fields"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignStart="@+id/product_card_image"
+                android:hint="@string/product_name"/>
+
+            <TextView
+                android:id="@+id/product_card_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal"
+                android:background="@drawable/card_input_fields"
+                android:padding="5dp"
+                android:layout_below="@+id/product_card_name"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignStart="@+id/product_card_image"
+                android:hint="@string/product_code"/>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/product_card_code"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignStart="@+id/product_card_image"
+                android:text="Product Price: "/>
+            <TextView
+                android:id="@+id/product_card_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal"
+                android:layout_below="@+id/product_card_code"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/price"
+                android:hint="@string/product_price"/>
+
+            <TextView
+                android:id="@+id/cutted_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price"
+                android:layout_alignStart="@+id/product_card_image"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="5dp"
+                android:text="Cutted Price:   "
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product_card_cutted_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price"
+                android:layout_toRightOf="@id/cutted_price"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/cutted_price"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

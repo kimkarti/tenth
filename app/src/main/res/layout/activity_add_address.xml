@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Clients.Activities.AddAddress">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/address_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:titleMarginTop="40dp"
+            app:titleMarginBottom="50dp"
+            app:title="Add Address"
+            android:background="@color/colorPrimaryDark"
+            app:titleTextColor="@color/colorAccent"/>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/save_btn"
+        android:layout_below="@+id/appBarLayout5"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/input_fields"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:paddingStart="10dp"
+
+                    android:paddingEnd="10dp"
+
+                    android:text="Name: "
+
+                    android:textCursorDrawable="@drawable/colour_cursor"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/shipping_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/input_fields"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="loading"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textCursorDrawable="@drawable/colour_cursor"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_fields"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:paddingStart="10dp"
+
+                    android:paddingEnd="10dp"
+
+                    android:text="Mobile: "
+
+                    android:textCursorDrawable="@drawable/colour_cursor"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+
+
+                    android:id="@+id/shipping_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:background="@drawable/input_fields"
+                    android:gravity="start"
+                    android:hint="loading"
+                    android:minHeight="48dp"
+
+                    android:padding="10dp"
+
+
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textCursorDrawable="@drawable/colour_cursor"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/shipping_building"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/input_fields"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="@string/flat_no_building_name"
+                android:isScrollContainer="true"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+
+
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/colour_cursor"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/shipping_locality"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/input_fields"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="@string/locality_area_or_street"
+                android:isScrollContainer="true"
+                android:maxLines="2"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/colour_cursor"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/shipping_landmark"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/input_fields"
+                android:hint="@string/landmark"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/colour_cursor"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+
+                    android:text="@string/pin_code"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+
+                    android:layout_marginEnd="3dp"
+                    android:background="@drawable/spinners"
+                    android:orientation="horizontal">
+
+                </RelativeLayout>
+
+                <Spinner
+                    android:id="@+id/uploadProductCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:saveEnabled="true"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="?android:attr/listDivider" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/reddish"
+        android:text="@string/cont"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+</RelativeLayout>

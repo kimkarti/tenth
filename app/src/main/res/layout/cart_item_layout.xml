@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorAccent"
+    android:elevation="3dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_values">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/product_image"
+                android:maxLines="2"
+                android:text="@string/product_name"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/quan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_Cuttedprice"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/product_image"
+                android:maxLines="2"
+                android:text="quantity"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/product_Cuttedprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/product_price"
+                android:textColor="#ff0000"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/product_image"
+                android:layout_below="@+id/product_name"/>
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/product_price"
+                android:textColor="#008e00"
+                android:textSize="18sp"
+                android:layout_below="@+id/quan"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/product_image"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@+id/product_image"
+                android:layout_marginStart="16dp"
+                android:layout_below="@+id/product_price">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/qty"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:id="@+id/product_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/border_background"
+                    android:backgroundTint="#000000"
+                    android:drawablePadding="8dp"
+                    android:padding="5dp"
+                    android:text="@string/one"
+                    android:textColor="#000000"
+                    app:drawableEndCompat="@drawable/ic_dropdownarrow" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/remove_item_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#F60100"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/relative_values">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="4dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/remove_item"
+                app:drawableStartCompat="@drawable/ic_bin_white" />
+        </LinearLayout>
+
+
+
+</RelativeLayout>

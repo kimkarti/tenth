@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Receipts"
+        android:id="@+id/recei"
+        app:showAsAction="never"/>
+    <item
+        android:title="About Us"
+        android:id="@+id/abt"
+        app:showAsAction="never"/>
+    <item
+        android:title="Help and FAQs"
+        android:id="@+id/faq"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/sign_out"
+        android:id="@+id/main_logout_option"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/search"
+        android:id="@+id/main_search_option"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"/>
+
+</menu>
